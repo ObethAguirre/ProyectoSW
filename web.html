@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Ingresos y Egresos</title>
+</head>
+<body>
+    <!-- Pantalla de inicio -->
+    <div id="inicio">
+        <h1>Bienvenido al Registro de Ingresos y Egresos</h1>
+        <button onclick="mostrarIngreso()">Registrar un Ingreso</button>
+        <button onclick="mostrarEgreso()">Registrar un Egreso</button>
+    </div>
+
+    <!-- Menú de ingresos -->
+    <div id="menuIngresos" style="display:none;">
+        <h2>Seleccione el tipo de ingreso:</h2>
+        <button onclick="mostrarApoyoOrganizaciones()">Apoyo de Organizaciones</button>
+        <button>Donaciones</button>
+        <button>Donativos de Padrinos</button>
+        <button>Eventos</button>
+        <button>Recaudación de Fondos</button>
+    </div>
+
+    <!-- Tabla de Apoyo de Organizaciones -->
+    <div id="tablaApoyoOrganizaciones" style="display:none;">
+        <h2>Apoyo de Organizaciones</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Fecha</th>
+                    <th>Organización</th>
+                    <th>Monto</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí se mostrarán los datos dinámicamente -->
+            </tbody>
+        </table>
+        <button onclick="agregarFila()">Agregar</button>
+        <button onclick="eliminarFila()">Eliminar</button>
+        <button onclick="modificarFila()">Modificar</button>
+    </div>
+
+    <script>
+        function mostrarIngreso() {
+            document.getElementById('inicio').style.display = 'none';
+            document.getElementById('menuIngresos').style.display = 'block';
+        }
+
+        function mostrarEgreso() {
+            // Función para mostrar la pantalla de registro de egresos
+        }
+
+        function mostrarApoyoOrganizaciones() {
+            document.getElementById('menuIngresos').style.display = 'none';
+            document.getElementById('tablaApoyoOrganizaciones').style.display = 'block';
+            // Aquí puedes agregar código para cargar los datos de la tabla si es necesario
+        }
+
+        function agregarFila() {
+            // Función para agregar una fila a la tabla
+        }
+
+        function eliminarFila() {
+            // Función para eliminar una fila de la tabla
+        }
+
+        function modificarFila() {
+            // Función para modificar una fila de la tabla
+        }
+    </script>
+</body>
+</html>
+
